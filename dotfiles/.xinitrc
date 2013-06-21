@@ -6,6 +6,7 @@ do
 done
 
 if [ -n $_FROM_XPROFILE ]
+then
 	exec dbus-launch --exit-with-session i3
 	unset _FROM_XPROFILE
 fi
