@@ -23,12 +23,6 @@ tc_unmount()
   truecrypt -d ~/crypt
 }
 
-tint_restart()
-{
-    pkill tint2 && tint2 &
-    disown
-}
-
 merge_pacnew()
 {
   PACNEWS=$(find /etc -name *.pacnew)
@@ -75,8 +69,13 @@ teardown_chroot()
   done
 }
 
-
-hibernate()
-{
-  sudo -b systemctl hibernate && slock
+man() {
+    env LESS_TERMCAP_mb=$(printf "\e[1;31m") \
+	LESS_TERMCAP_md=$(printf "\e[1;31m") \
+	LESS_TERMCAP_me=$(printf "\e[0m") \
+	LESS_TERMCAP_se=$(printf "\e[0m") \
+	LESS_TERMCAP_so=$(printf "\e[1;44;33m") \
+	LESS_TERMCAP_ue=$(printf "\e[0m") \
+	LESS_TERMCAP_us=$(printf "\e[1;32m") \
+	man "$@"
 }

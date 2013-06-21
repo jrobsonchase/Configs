@@ -1,6 +1,8 @@
 GOPATH=$HOME/Go; export GOPATH
 GOROOT=$HOME/.local/lib/go; export GOROOT
-PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+
+pathmunge $GOPATH/bin
+pathmunge $GOROOT/bin
 
 build_cmd() {
 	pushd $GOROOT/src

@@ -1,5 +1,3 @@
-echo desktop.sh
-
 xrdb ~/.Xresources
 compton --vsync opengl -f -m 0.85 &
 eval `cat ~/.fehbg`

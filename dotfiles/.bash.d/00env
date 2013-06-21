@@ -1,0 +1,4 @@
+. /etc/profile
+EDITOR="vim"; export EDITOR
+
+[ -e /usr/share/doc/pkgfile/command-not-found.bash ] && source /usr/share/doc/pkgfile/command-not-found.bash

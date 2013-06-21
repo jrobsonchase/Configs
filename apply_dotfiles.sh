@@ -5,7 +5,7 @@ backupFiles() {
 	dst=$2
 	find . -type f | while read i
 	do
-		[[ "$i" != *.tar.gz ]] && mv "$src/$i" "$dst/$i"
+		[[ "$i" != *.tar.gz ]] && mv "$src/$i" "$dst/$i" 2>/dev/null
 	done
 }
 
