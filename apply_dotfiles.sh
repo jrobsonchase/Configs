@@ -1,31 +1,47 @@
 #!/bin/bash
 
+backupFiles() {
+	src=$1
+	dst=$2
+	find . -type f | while read i
+	do
+		[[ "$i" != *.tar.gz ]] && mv "$src/$i" "$dst/$i"
+	done
+}
+
+mirrorDirs() {
+	dst="$1"
+	find . -type d | while read i
+	do
+		mkdir -p "$dst/$i"
+	done
+}
+
+createLinks() {
+	dst=$1
+	find . -type f | while read i
+	do
+		[[ "$i" != *.tar.gz ]] && ln -s "$(pwd)/${i}" "$1/$i"
+	done
+}
+
+untarThemes() {
+	find .themes/ -name *.tar.gz | while read i
+	do
+		tar xf "$i" -C $HOME/.themes
+	done
+}
+
 cd "$(dirname $0)/dotfiles"
 dateext=$(date +%s)
+backupdir=$HOME/.dotfiles.$dateext
+mkdir -p $backupdir
 
-mkdir ~/.dotfiles.${dateext}
-mkdir ~/.config -p
-mkdir ~/.gnupg -p
-tracked="\
-	.bashrc \
-	.bash.d \
-	.xinitrc \
-	.xinit.d \
-	.vimrc \
-	.config/gtk-3.0 \
-	.config/gtk-2.0 \
-	.config/uzbl \
-	.i3 \
-	.gnupg/gpg*.conf \
-	.themes \
-	.Xresources \
-	.xprofile"
+mirrorDirs $HOME
 
-for i in $tracked
-do
-	if [ $i != "." ] && [ $i != ".." ]
-	then
-		mv ~/${i} ~/.dotfiles.${dateext}/
-		ln -s $(pwd)/${i} ~/${i}
-	fi
-done
+mirrorDirs $backupdir
+backupFiles $HOME $backupdir
+
+createLinks $HOME
+
+untarThemes $HOME
