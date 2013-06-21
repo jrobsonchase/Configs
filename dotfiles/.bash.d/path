@@ -1,0 +1,5 @@
+. $HOME/.bash.d/functions
+
+pathmunge $HOME/.local/bin
+
+export PATH

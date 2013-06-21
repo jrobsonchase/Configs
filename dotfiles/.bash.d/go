@@ -1,0 +1,31 @@
+GOPATH=$HOME/Go; export GOPATH
+GOROOT=$HOME/.local/lib/go; export GOROOT
+PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+
+build_cmd() {
+	pushd $GOROOT/src
+	set -e
+	for arch in 8 6; do
+			for cmd in a c g l; do
+					go tool dist install -v cmd/$arch$cmd
+			done
+	done
+	popd
+}
+
+build_pkg() {
+	if [ -z "$1" ]; then
+			echo 'GOOS is not specified' 1>&2
+			exit 2
+	else
+			export GOOS=$1
+	fi
+	shift
+	if [ -n "$1" ]; then
+			export GOARCH=$1
+	fi
+	pushd $GOROOT/src
+	go tool dist install -v pkg/runtime
+	go install -v -a std
+	popd
+}
