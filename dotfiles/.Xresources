@@ -23,7 +23,10 @@ URxvt*cursorBlink: true
 *scrollBar: false
 *loginShell: true
 
-*colorUL: #86a2b0
+*colorIT:      #87af5f
+*colorBD:      #d7d7d7
+*colorUL:      #87afd7
+
 !
 !black
 *color0:  #4d4d4d
