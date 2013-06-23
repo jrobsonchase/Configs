@@ -1,0 +1,6 @@
+# automatically verify the sign of a message when opened
+set crypt_verify_sig=yes
+
+# it's a regexp used against the GPG output: if it matches some line of the output
+# then mutt considers the message a good signed one (ignoring the GPG exit code)
+set pgp_good_sign="^gpg: Good signature from"

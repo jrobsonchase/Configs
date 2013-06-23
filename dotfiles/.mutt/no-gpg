@@ -1,0 +1,16 @@
+# mutt uses by default PGP/GPG to sign/encrypt messages
+# if you want to use S-mime instead set the smime_is_default variable to yes
+
+# automatically sign all outgoing messages
+unset crypt_autosign
+# sign only replies to signed messages
+unset crypt_replysign
+
+# automatically encrypt outgoing messages
+unset crypt_autoencrypt
+# encrypt only replies to signed messages
+unset crypt_replyencrypt
+# encrypt and sign replies to encrypted messages
+unset crypt_replysignencrypted
+
+source ~/.mutt/gpg-verify

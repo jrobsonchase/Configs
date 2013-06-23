@@ -1,0 +1,29 @@
+set editor='vim --cmd "set spell spelllang=en_us" --cmd "set tw=72"'
+macro pager <f12> '<pipe-entry>extract_url | urlview<enter>' 'Follow links with urlview'
+set ssl_starttls=yes
+
+set sort=threads
+
+#unset imap_passive
+#set imap_check_subscribed
+set mail_check=15
+
+set message_cachedir = "~/.cache/mutt"
+set header_cache = "~/.cache/mutt"
+
+set alias_file = ~/.mutt/aliases
+source ~/.mutt/colors
+source ~/.mutt/aliases
+source ~/.mutt/sidebar
+
+source ~/.mutt/louisville.edu
+folder-hook $folder 'source ~/.mutt/louisville.edu'
+macro index <f4> "<change-folder>$folder<enter>"
+
+source ~/.mutt/grumpyjosh.com
+folder-hook $folder 'source ~/.mutt/grumpyjosh.com'
+macro index <f3> "<change-folder>$folder<enter>"
+
+source ~/.mutt/gmail.com
+folder-hook $folder 'source ~/.mutt/gmail.com'
+macro index <f2> "<change-folder>$folder<enter>"
