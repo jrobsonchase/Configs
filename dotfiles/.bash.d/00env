@@ -5,4 +5,6 @@ EDITOR="vim"; export EDITOR
 # disable annoying x11-ssh-askpass prompt
 export GIT_ASKPASS=""
 
+export XDG_CONFIG_HOME=$HOME/.config
+
 [ -e /usr/share/doc/pkgfile/command-not-found.bash ] && source /usr/share/doc/pkgfile/command-not-found.bash
