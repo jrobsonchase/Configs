@@ -1,3 +1,5 @@
 pathmunge $HOME/.local/bin
 
+pathmunge $HOME/.rvm/bin # Add RVM to PATH for scripting
+
 export PATH

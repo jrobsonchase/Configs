@@ -73,6 +73,7 @@ set download_handler    = sync_spawn @scripts_dir/download.sh
 @on_event   LOAD_COMMIT    js uzbl = {};
 @on_event   LOAD_COMMIT    script @scripts_dir/formfiller.js
 @on_event   LOAD_COMMIT    script @scripts_dir/follow.js
+@on_event   LOAD_COMMIT    script @scripts_dir/adblock.js
 
 # Userscripts/per-site-settings. See the script and the example configuration for details
 #@on_event   LOAD_COMMIT    spawn @scripts_dir/per-site-settings.py @data_home/uzbl/per-site-settings
@@ -134,7 +135,6 @@ set progress.pending    =
 
 # === Useragent setup ========================================================
 
-#set useragent         = Uzbl (Webkit @{WEBKIT_MAJOR}.@{WEBKIT_MINOR}) (@(+uname -sm)@ [@ARCH_UZBL])
 set useragent         = Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1468.0 Safari/537.36
 
 # === Configure cookie blacklist ========================================================
@@ -229,6 +229,9 @@ set ebind     = @mode_bind global,-insert
 
 # --- Keyboard bindings ------------------------------------------------------
 
+@cbind \\uau = set useragent         = Uzbl (Webkit @{WEBKIT_MAJOR}.@{WEBKIT_MINOR}) (@(+uname -sm)@ [@ARCH_UZBL])
+@cbind \\uac = set useragent         = Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1468.0 Safari/537.36
+
 # With this command you can enter in any command at runtime when prefixed with
 # a colon.
 @cbind    :_        = %s
@@ -285,6 +288,7 @@ set ebind     = @mode_bind global,-insert
 # Web searching binds
 @cbind  gg<Google:>_         = uri http://www.google.com/search?q=\@<encodeURIComponent(%r)>\@
 @cbind  ddg<DuckDuckGo:>_    = uri http://duckduckgo.com/?q=%s
+@cbind  \\s<StartPage:>_    = uri https://startpage.com/do/search?prf=0a16a276e4effd7a3e2798683733b56c&cat=web&query=\@<encodeURIComponent(%r)>\@
 @cbind  \\awiki<Archwiki:>_  = uri http://wiki.archlinux.org/index.php/Special:Search?search=\@<encodeURIComponent(%r)>\@&go=Go
 @cbind  \\wiki<Wikipedia:>_  = uri http://en.wikipedia.org/w/index.php?title=Special:Search&search=\@<encodeURIComponent(%r)>\@&go=Go
 
