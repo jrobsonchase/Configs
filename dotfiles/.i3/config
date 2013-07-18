@@ -178,6 +178,8 @@ bar {
 bindsym $mod+Shift+F12 move scratchpad
 bindsym $mod+F12 scratchpad show
 
+bindsym $mod+i exec "~/.i3/weechat_launch.sh"
+
 #
 # Some of my additional settings
 #
