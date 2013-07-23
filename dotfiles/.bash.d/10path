@@ -1,4 +1,6 @@
 pathmunge $HOME/.local/bin
+pathmunge $HOME/.local/musl/bin
+pathmunge $HOME/.cabal/bin
 
 pathmunge $HOME/.rvm/bin # Add RVM to PATH for scripting
 

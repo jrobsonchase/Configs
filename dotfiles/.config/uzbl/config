@@ -291,7 +291,9 @@ set ebind     = @mode_bind global,-insert
 @cbind  \\s<StartPage:>_    = uri https://startpage.com/do/search?prf=0a16a276e4effd7a3e2798683733b56c&cat=web&query=\@<encodeURIComponent(%r)>\@
 @cbind  \\awiki<Archwiki:>_  = uri http://wiki.archlinux.org/index.php/Special:Search?search=\@<encodeURIComponent(%r)>\@&go=Go
 @cbind  \\wiki<Wikipedia:>_  = uri http://en.wikipedia.org/w/index.php?title=Special:Search&search=\@<encodeURIComponent(%r)>\@&go=Go
+@cbind  \\r<Reddit:>_         = uri http://reddit.com/r/\@<encodeURIComponent(%r)>\@
 
+@cbind  \\g<GoDoc:>_    = uri http://localhost:8080/\@<encodeURIComponent(%r)>\@
 # Handy binds
 # Set function shortcut
 @cbind  s<var:>_<value:>_  = set %1 = %2

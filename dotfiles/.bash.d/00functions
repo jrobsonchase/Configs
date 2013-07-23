@@ -1,76 +1,78 @@
 pathmunge () {
-        if ! echo $PATH | egrep -q "(^|:)$1($|:)" ; then
-           if [ "$2" = "after" ] ; then
-              PATH=$PATH:$1
-           else
-              PATH=$1:$PATH
-           fi
-        fi
+	if [ -e $1 ]; then
+		if ! echo $PATH | egrep -q "(^|:)$1($|:)" ; then
+			 if [ "$2" = "after" ] ; then
+				PATH=$PATH:$1
+			 else
+				PATH=$1:$PATH
+			 fi
+		fi
+	fi
 }
 
 new_startx()
 {
-  /usr/bin/startx &
+	/usr/bin/startx &
 }
 
 tc_mount()
 {
-  truecrypt --mount ~/Dropbox/crypt.tc ~/crypt
+	truecrypt --mount ~/Dropbox/crypt.tc ~/crypt
 }
 
 tc_unmount()
 {
-  truecrypt -d ~/crypt
+	truecrypt -d ~/crypt
 }
 
 merge_pacnew()
 {
-  PACNEWS=$(find /etc -name *.pacnew)
-  for i in $PACNEWS; do
-    old=`echo $i | sed 's/\(.*\)\.pacnew/\1/'`
-    vimdiff $old $i
-  done
+	PACNEWS=$(find /etc -name *.pacnew)
+	for i in $PACNEWS; do
+		old=`echo $i | sed 's/\(.*\)\.pacnew/\1/'`
+		sudo vimdiff $old $i
+	done
 }
 
 remove_pacnew()
 {
-  PACNEWS=$(find /etc -name *.pacnew)
-  for i in $PACNEWS; do
-    rm $i
-  done
+	PACNEWS=$(find /etc -name *.pacnew)
+	for i in $PACNEWS; do
+		sudo rm $i
+	done
 }
 
 setup_chroot()
 {
-  local binds
-  binds="/dev /sys /sys/fs/cgroup"
-  for i in $binds
-  do
-    sudo mount --bind $i /mnt$i
-  done
+	local binds
+	binds="/dev /sys /sys/fs/cgroup"
+	for i in $binds
+	do
+		sudo mount --bind $i /mnt$i
+	done
 
-  sudo mount -t proc none /mnt/proc
+	sudo mount -t proc none /mnt/proc
 }
 
 enter_chroot()
 {
-  setup_chroot
+	setup_chroot
 
-  sudo chroot /mnt
+	sudo chroot /mnt
 }
 
 teardown_chroot()
 {
-  local binds
-  binds="/dev /sys/fs/cgroup /sys /proc"
-  for i in $binds
-  do
-    sudo umount /home/chroot$i
-  done
+	local binds
+	binds="/dev /sys/fs/cgroup /sys /proc"
+	for i in $binds
+	do
+		sudo umount /home/chroot$i
+	done
 }
 
 man() {
-    env LESS_TERMCAP_mb=$(printf "\e[1;31m") \
+	env LESS_TERMCAP_mb=$(printf "\e[1;31m") \
 	LESS_TERMCAP_md=$(printf "\e[1;31m") \
 	LESS_TERMCAP_me=$(printf "\e[0m") \
 	LESS_TERMCAP_se=$(printf "\e[0m") \
