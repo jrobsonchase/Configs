@@ -27,7 +27,7 @@ tc_unmount()
 
 merge_pacnew()
 {
-	PACNEWS=$(find /etc -name *.pacnew)
+	PACNEWS=$(sudo find /etc -name *.pacnew)
 	for i in $PACNEWS; do
 		old=`echo $i | sed 's/\(.*\)\.pacnew/\1/'`
 		sudo vimdiff $old $i
@@ -36,7 +36,7 @@ merge_pacnew()
 
 remove_pacnew()
 {
-	PACNEWS=$(find /etc -name *.pacnew)
+	PACNEWS=$(sudo find /etc -name *.pacnew)
 	for i in $PACNEWS; do
 		sudo rm $i
 	done
