@@ -17,3 +17,6 @@ set pgp_sign_as=0xEC950614
 source ~/.mutt/gpg-encryptsign
 
 set smtp_url=smtps://$imap_user:$imap_pass@smtp.gmail.com
+
+alternates "jechas01@louisville.edu|jechas01@cardmail.louisville.edu|jcjoshuachase@gmail.com"
+set reverse_name

@@ -2,7 +2,7 @@
 # Color definitions
 #
 
-#color normal white default
+color normal white default
 color hdrdefault red default
 color quoted brightblue default
 color signature red default

@@ -5,7 +5,7 @@ set ssl_starttls=yes
 set sort=threads
 
 #unset imap_passive
-#set imap_check_subscribed
+set imap_check_subscribed
 set mail_check=15
 
 set message_cachedir = "~/.cache/mutt"
@@ -16,9 +16,9 @@ source ~/.mutt/colors
 source ~/.mutt/aliases
 source ~/.mutt/sidebar
 
-source ~/.mutt/louisville.edu
-folder-hook $folder 'source ~/.mutt/louisville.edu'
-macro index <f4> "<change-folder>$folder<enter>"
+#source ~/.mutt/louisville.edu
+#folder-hook $folder 'source ~/.mutt/louisville.edu'
+#macro index <f4> "<change-folder>$folder<enter>"
 
 source ~/.mutt/grumpyjosh.com
 folder-hook $folder 'source ~/.mutt/grumpyjosh.com'

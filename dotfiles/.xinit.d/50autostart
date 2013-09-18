@@ -1,4 +1,5 @@
+leapd &
 pamusb-agent &
 #VBoxClient-all &
-#dropboxd &
+dropboxd &
 #pidgin &
