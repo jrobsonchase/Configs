@@ -4,7 +4,7 @@ set ssl_starttls=yes
 
 set sort=threads
 
-#unset imap_passive
+unset imap_passive
 set imap_check_subscribed
 set mail_check=15
 
@@ -20,9 +20,9 @@ source ~/.mutt/sidebar
 #folder-hook $folder 'source ~/.mutt/louisville.edu'
 #macro index <f4> "<change-folder>$folder<enter>"
 
-source ~/.mutt/grumpyjosh.com
-folder-hook $folder 'source ~/.mutt/grumpyjosh.com'
-macro index <f3> "<change-folder>$folder<enter>"
+#source ~/.mutt/grumpyjosh.com
+#folder-hook $folder 'source ~/.mutt/grumpyjosh.com'
+#macro index <f3> "<change-folder>$folder<enter>"
 
 source ~/.mutt/gmail.com
 folder-hook $folder 'source ~/.mutt/gmail.com'

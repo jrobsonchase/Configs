@@ -42,6 +42,9 @@ for_window [title="alsamixer"] move absolute position 0 px 0 px
 # Cluster-ssh
 for_window [title="cssh"] floating enable
 for_window [title="CSSH"] floating enable
+for_window [class="armitage"] floating enable
+for_window [class="armitage-ArmitageMain"] floating enable
+for_window [class="Armitage"] floating enable
 
 # lock screen
 bindsym $mod+Escape exec xautolock -locknow

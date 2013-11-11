@@ -1,3 +1,7 @@
+au BufNewFile,BufRead *.tex set ft=tex
+au FileType tex setl spell spelllang=en
+au FileType tex setl tw=72
+
 syntax off
 filetype plugin indent off
 set runtimepath+=$GOROOT/misc/vim
