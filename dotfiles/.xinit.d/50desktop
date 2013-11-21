@@ -3,6 +3,9 @@ compton --vsync opengl -f -m 0.85 &
 eval `cat ~/.fehbg`
 xsetroot -cursor_name left_ptr &
 xset -dpms
+xset -b
 xset s off
 xautolock -locker "i3lock -d -n -c 000000" -time 5 &
 pamusb-agent &
+wicd-gtk -t &
+$HOME/.scripts/wallpaper.sh &

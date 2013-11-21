@@ -1,5 +1,6 @@
-leapd &
+#leapd &
 pamusb-agent &
 #VBoxClient-all &
-dropboxd &
+#dropboxd &
 #pidgin &
+xflux -z 40208

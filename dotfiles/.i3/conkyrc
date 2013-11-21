@@ -8,12 +8,21 @@ pad_percents	  3
 
 override_utf8_locale yes
 
+if_up_strictness address
+
 TEXT
 ,[{"full_text": " ❤ $acpitemp°C [${cpu}%] ","color": "\#DC322F"},
   {"full_text": " ≣ [$membar] ", "color":"\#B58900"},
-  {"full_text": " ≈ ${wireless_essid wls1} [${wireless_link_qual_perc wls1}%] ","color":"\#33CC99"},
-  {"full_text": " ☇ [$battery_percent%] "},
-  {"full_text": " ${time %a %d %b} ${time %H:%M} "}
+  {"full_text" : "\
+${if_match "$gw_iface"=="(null)"} Network Unavailable " , "color" : "\#FF173E" },\
+${endif}\
+${if_match "$gw_iface"=="wlp2s0"} ≈ ${wireless_essid wlp2s0} [${wireless_link_qual_perc wlp2s0}%] on ${addr wlp2s0} DL: ${downspeed wlp2s0} UL: ${upspeed wlp2s0} " , "color" : "\#33CC99" },\
+${endif}\
+${if_match "$gw_iface"=="enp0s25"} ⇋ enp0s25 on ${addr enp0s25} DL: ${downspeed enp0s25} UL: ${upspeed enp0s25} " , "color" : "\#4C7899" },\
+${endif}\
+  {"full_text": " ☇ [$battery_short] $battery_time "},
+  {"full_text": " ♫ [${exec amixer get Master -M | grep -oE "[[:digit:]]*%"}] ", "color":"\#00ddff"},
+  {"full_text": " [${time %a %d %b} ${time %H:%M}] ","color": "\#2fdc57"}
 ]
 
 
