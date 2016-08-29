@@ -1,2 +1,3 @@
 GPG_AGENT_OPTS="--daemon --enable-ssh-support"
 eval `gpg-agent $GPG_AGENT_OPTS 2>/dev/null`
+SSH_AUTH_SOCK=/home/josh/.gnupg/S.gpg-agent.ssh; export SSH_AUTH_SOCK;

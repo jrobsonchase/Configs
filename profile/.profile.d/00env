@@ -1,10 +1,9 @@
 . /etc/profile
 
 EDITOR="vim"; export EDITOR
+TERMINAL="~/.local/bin/urxvt_launch.sh"
 
 # disable annoying x11-ssh-askpass prompt
 export GIT_ASKPASS=""
 
 export XDG_CONFIG_HOME=$HOME/.config
-
-export PAGER=less

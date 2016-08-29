@@ -1,3 +1,2 @@
-# These are local virtualenvs
 pathmunge $HOME/.local/python/bin
 pathmunge $HOME/.local/python3/bin

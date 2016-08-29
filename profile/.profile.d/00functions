@@ -33,7 +33,6 @@ man() {
 	man "$@"
 }
 
-# generate nice backtraces for things that crash
 bt() {
 	local _backtrace='-ex "echo backtrace:\n" -ex "backtrace full"'
 	local _registers='-ex "echo \n\nregisters:\n" -ex "info registers"'
@@ -56,7 +55,29 @@ bt() {
 	--args $@ 2>/dev/null && cat gdb.bt
 }
 
-# because my trackpoint is sometimes stupid
+rerunsudo() {
+	"$@"
+	if [ 0 -ne $? ]
+	then
+		echo -e '\nRe-running as root!\n' && /usr/bin/sudo "$@"
+	fi
+}
+
+tothemax() {
+	echo http://koalastothemax/?$(echo $1 | base64 -w 0)
+}
+
+watchandrun() {
+	local cmd="$@"
+	while true
+	do
+		inotifywait -e create -e delete -e modify -r --exclude '.*(\.swp)|~' . >/dev/null 2>/dev/null
+		sleep 1
+		echo Running: $@
+		$* && echo Process exited successfully || echo Process returned $?
+	done
+}
+
 resetmouse() {
 	sudo rmmod psmouse
 	sudo rmmod mousedev

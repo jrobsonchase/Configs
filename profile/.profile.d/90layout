@@ -1,5 +1,3 @@
-# handy function to apply arandr-created layout scripts
-# plus autocomplete
 layout() {
 	source $HOME/.screenlayout/$1.sh
 	cat $HOME/.fehbg | bash
