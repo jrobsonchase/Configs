@@ -1,0 +1,67 @@
+pathmunge () {
+	if [ -e $1 ]; then
+		if ! echo $PATH | egrep -q "(^|:)$1($|:)" ; then
+			 if [ "$2" = "after" ] ; then
+				PATH=$PATH:$1
+			 else
+				PATH=$1:$PATH
+			 fi
+		fi
+	fi
+}
+
+ldmunge () {
+	if [ -e $1 ]; then
+		if ! echo $LD_LIBRARY_PATH | egrep -q "(^|:)$1($|:)" ; then
+			 if [ "$2" = "after" ] ; then
+				LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$1
+			 else
+				LD_LIBRARY_PATH=$1:$LD_LIBRARY_PATH
+			 fi
+		fi
+	fi
+}
+
+man() {
+	env LESS_TERMCAP_mb=$(printf "\e[1;31m") \
+	LESS_TERMCAP_md=$(printf "\e[1;31m") \
+	LESS_TERMCAP_me=$(printf "\e[0m") \
+	LESS_TERMCAP_se=$(printf "\e[0m") \
+	LESS_TERMCAP_so=$(printf "\e[1;44;33m") \
+	LESS_TERMCAP_ue=$(printf "\e[0m") \
+	LESS_TERMCAP_us=$(printf "\e[1;32m") \
+	man "$@"
+}
+
+# generate nice backtraces for things that crash
+bt() {
+	local _backtrace='-ex "echo backtrace:\n" -ex "backtrace full"'
+	local _registers='-ex "echo \n\nregisters:\n" -ex "info registers"'
+	local _instructions='-ex "echo \n\ncurrent instructions:\n" -ex "x/16i \$pc"'
+	local _threads='-ex "echo \n\nthreads backtrace:\n" -ex "thread apply all backtrace"'
+
+	echo 0 | gdb -batch-silent \
+	-ex "run" \
+	-ex "set logging overwrite on" \
+	-ex "set logging file gdb.bt" \
+	-ex "set logging on" \
+	-ex "set pagination off" \
+	-ex "handle SIG33 pass nostop noprint" \
+	-ex "echo backtrace:\n" -ex "backtrace full" \
+	-ex "echo \n\nregisters:\n" -ex "info registers" \
+	-ex "echo \n\ncurrent instructions:\n" -ex "x/16i \$pc" \
+	-ex "echo \n\nthreads backtrace:\n" -ex "thread apply all backtrace" \
+	-ex "set logging off" \
+	-ex "quit" \
+	--args $@ 2>/dev/null && cat gdb.bt
+}
+
+# because my trackpoint is sometimes stupid
+resetmouse() {
+	sudo rmmod psmouse
+	sudo rmmod mousedev
+	sleep 1
+	sudo modprobe psmouse
+	sleep 5
+	source ~/.xinit.d/50synaptics
+}

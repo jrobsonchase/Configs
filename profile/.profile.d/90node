@@ -1,0 +1,2 @@
+export NODE_PATH=$HOME/node_modules
+pathmunge $HOME/node_modules/.bin

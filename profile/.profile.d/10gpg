@@ -1,0 +1,2 @@
+GPG_AGENT_OPTS="--daemon --enable-ssh-support"
+eval `gpg-agent $GPG_AGENT_OPTS 2>/dev/null`

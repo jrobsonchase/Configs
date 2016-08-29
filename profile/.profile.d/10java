@@ -1,0 +1,12 @@
+pathmunge $HOME/.local/eclipse
+pathmunge $HOME/.local/intellij/bin
+
+if [[ -n $CLASSPATH ]]; then
+	export CLASSPATH=$CLASSPATH:$HOME/.local/antlr4/antlr-4.5-complete.jar:.
+else
+	export CLASSPATH=$HOME/.local/antlr4/antlr-4.5-complete.jar:.
+fi
+
+alias antlr4='java -jar $HOME/.local/antlr4/antlr-4.5-complete.jar'
+alias antlr4-opt='java -cp $HOME/.local/antlr4/antlr-4.5.1-complete.jar org.antlr.v4.Tool'
+alias grun='java org.antlr.v4.runtime.misc.TestRig'

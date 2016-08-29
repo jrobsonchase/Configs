@@ -1,0 +1,2 @@
+export MSF_DATABASE_CONFIG=$HOME/.config/metasploit/database.yml
+

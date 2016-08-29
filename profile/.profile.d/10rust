@@ -1,0 +1,8 @@
+export CARGO_HOME=$HOME/.cargo
+export CARGO_INSTALL_ROOT=$HOME/.local
+pathmunge $CARGO_HOME/bin
+
+RUST_HOME="$(rustc --print sysroot)"
+export RUST_SRC_PATH="$RUST_HOME/lib/rustlib/src/rust/src"
+
+export RUST_BACKTRACE=1

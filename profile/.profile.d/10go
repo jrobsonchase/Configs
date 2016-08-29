@@ -1,0 +1,5 @@
+GOPATH=$HOME/Dev:$HOME/gozer/go; export GOPATH
+GOROOT=$HOME/.local/lib/go; export GOROOT
+
+pathmunge $HOME/Dev/bin
+pathmunge $GOROOT/bin
