@@ -1,0 +1,13 @@
+if [ ! -v USE_RVM ]
+then
+rvm() {
+	[ -z $@ ] && USE_RVM=1 /bin/bash || USE_RVM=1 /bin/bash -i -c "$@"
+}
+fi
+
+if [ -v USE_RVM ]
+then
+	[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" && export PS1="(rvm)$PS1" # Load RVM into a shell session *as a function*
+	export rvmsudo_secure_path=0
+	pathmunge after "$HOME/.rvm/bin" # Add RVM to PATH for scripting
+fi
