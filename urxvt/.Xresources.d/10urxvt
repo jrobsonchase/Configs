@@ -97,7 +97,7 @@ URxvt*secondaryWheel: true
 !white?
 *color15: #FFFFFF
 
-URxvt*background: #272822
+URxvt*background: [90]#272822
 URxvt*foreground: #F8F8F2
 
 ! Solarized
