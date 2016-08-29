@@ -33,7 +33,7 @@
                 case-fold-search nil
                 git-gutter-fr:side (quote right-fringe)
                 nxml-child-indent 4
-                python-shell-virtualenv-path "/home/jchase/.local/waf_env"
+                rust-format-on-save t
                 ;; debug-on-quit t
                 )
   (evil-leader/set-key "at" 'launch-terminal)
@@ -60,6 +60,7 @@
   (spacemacs/toggle-transparent-frame)
   (add-hook 'yas-before-expand-snippet-hook (lambda () (smartparens-mode -1)))
   (add-hook 'yas-after-exit-snippet-hook (lambda () (smartparens-mode 1)))
+  (setenv "RUST_BACKTRACE" "1")
   )
 
 (defun ido-goto-symbol (&optional symbol-list)

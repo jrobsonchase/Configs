@@ -13,7 +13,6 @@
 (setq pursuit-packages
   '(
     ;; package pursuits go here
-    fish-mode
     ))
 
 (setq pursuit-excluded-packages '())
@@ -27,7 +26,3 @@
 ;; Often the body of an initialize function uses `use-package'
 ;; For more info on `use-package', see readme:
 ;; https://github.com/jwiegley/use-package
-
-(defun pursuit/init-fish-mode ()
-  "init fish-mode"
-  )
