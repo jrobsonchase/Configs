@@ -10,4 +10,4 @@ xautolock -locker "i3lock -n -c 000000" -time 5 &
 pulseaudio --start
 wicd-gtk -t &
 redshift-gtk -l 34.050:-118.250 &
-source ~/.screenlayout/default.sh
+layout default
