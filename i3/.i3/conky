@@ -1,0 +1,6 @@
+#!/bin/sh
+echo "{\"version\":1}"
+echo "[[]"
+while true; do
+	conky -c ~/.i3/conkyrc
+done
