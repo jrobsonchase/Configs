@@ -31,7 +31,6 @@
                 gofmt-command "goimports"
                 flycheck-disabled-checkers '()
                 case-fold-search nil
-                git-gutter-fr:side (quote right-fringe)
                 nxml-child-indent 4
                 rust-format-on-save t
                 ;; debug-on-quit t
