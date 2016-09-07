@@ -28,7 +28,8 @@ values."
      auto-completion
      syntax-checking
 
-     version-control
+     (version-control :variables
+                      version-control-diff-tool 'diff-hl)
 
      git
 
@@ -38,8 +39,8 @@ values."
      haskell
      ;; slime
      (rust :variables
-           rust-enable-racer t
-           )
+           rust-enable-racer t)
+
      python
      c-c++
 

@@ -33,6 +33,7 @@
                 case-fold-search nil
                 nxml-child-indent 4
                 rust-format-on-save t
+                diff-hl-side 'right
                 ;; debug-on-quit t
                 )
   (evil-leader/set-key "at" 'launch-terminal)
