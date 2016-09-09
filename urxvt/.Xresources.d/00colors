@@ -1,0 +1,177 @@
+! Monokai
+#define monokai_yellow           #CDC673
+#define monokai_orange           #FF8C00
+#define monokai_red              #FF1493
+#define monokai_magenta          #D700D7
+#define monokai_violet           #AF87FF
+#define monokai_blue             #5FD7FF
+#define monokai_cyan             #5FFFFF
+#define monokai_green            #87D700
+#define monokai_gray             #3D3D3D
+!! Darker and lighter accented colors
+#define monokai_yellow_d         #878700
+#define monokai_yellow_l         #FFFF87
+#define monokai_orange_d         #AF5F00
+#define monokai_orange_l         #FFAF5F
+#define monokai_red_d            #870000
+#define monokai_red_l            #FF5F87
+#define monokai_magenta_d        #AF0087
+#define monokai_magenta_l        #FF87DF
+#define monokai_violet_d         #5F00AF
+#define monokai_violet_l         #AF87D7
+#define monokai_blue_d           #008787
+#define monokai_blue_l           #87D7FF
+#define monokai_cyan_d           #5FAFAF
+#define monokai_cyan_l           #AFFFFF
+#define monokai_green_d          #5F8700
+#define monokai_green_l          #AFD700
+#define monokai_gray_d           #333333
+#define monokai_gray_l           #707070
+!! Adaptive colors
+#define monokai_fg               #F5F5F5
+#define monokai_bg               #272822
+#define monokai_comments         #8B8878
+#define monokai_emphasis         #FFFAFA
+#define monokai_linum            #8F908A
+#define monokai_highlight        #474747
+#define monokai_highlight_alt    #3E3E3E
+#define monokai_highlight_line   #000000
+!! Adaptive higher/lower contrast accented colors
+#define monokai_fg_hc            #171A0B
+#define monokai_fg_lc            #141414
+
+#define monokai_background  [90]monokai_bg
+#define monokai_foreground  monokai_fg
+#define monokai_cursorColor monokai_orange
+
+! black light/dark
+#define monokai_color0    #4d4d4d
+#define monokai_color8    #5a5a5a
+
+! red light/dark
+#define monokai_color1    monokai_red_l
+#define monokai_color9    monokai_red
+
+! green light/dark
+#define monokai_color2    monokai_green_l
+#define monokai_color10   monokai_green
+
+! yellow light/dark
+#define monokai_color3    monokai_yellow_l
+#define monokai_color11   monokai_yellow
+
+! blue light/dark
+#define monokai_color4    monokai_blue_l
+#define monokai_color12   monokai_blue
+
+! magenta light/dark
+#define monokai_color5    monokai_magenta_l
+#define monokai_color13   monokai_magenta
+
+! cyan light/dark
+#define monokai_color6    monokai_cyan_l
+#define monokai_color14   monokai_cyan
+
+! white light/dark
+#define monokai_color7    monokai_gray_l
+#define monokai_color15   monokai_gray
+
+
+! Solarized
+#define S_base03        #002b36
+#define S_base02        #073642
+#define S_base01        #586e75
+#define S_base00        #657b83
+#define S_base0         #839496
+#define S_base1         #93a1a1
+#define S_base2         #eee8d5
+#define S_base3         #fdf6e3
+
+#define S_yellow        #b58900
+#define S_orange        #cb4b16
+#define S_red           #dc322f
+#define S_magenta       #d33682
+#define S_violet        #6c71c4
+#define S_blue          #268bd2
+#define S_cyan          #2aa198
+#define S_green         #859900
+
+! Actual settings
+#define S_background             S_base03
+#define S_foreground             S_base0
+#define S_fadeColor              S_base03
+#define S_cursorColor            S_base1
+#define S_pointerColorBackground S_base01
+#define S_pointerColorForeground S_base1
+
+!! black dark/light
+#define S_color0                 S_base02
+#define S_color8                 S_base03
+
+!! red dark/light
+#define S_color1                 S_red
+#define S_color9                 S_orange
+
+!! green dark/light
+#define S_color2                 S_green
+#define S_color10                S_base01
+
+!! yellow dark/light
+#define S_color3                 S_yellow
+#define S_color11                S_base00
+
+!! blue dark/light
+#define S_color4                 S_blue
+#define S_color12                S_base0
+
+!! magenta dark/light
+#define S_color5                 S_magenta
+#define S_color13                S_violet
+
+!! cyan dark/light
+#define S_color6                 S_cyan
+#define S_color14                S_base1
+
+!! white dark/light
+#define S_color7                 S_base2
+#define S_color15                S_base3
+
+! Actual settings
+*background:             monokai_background
+*foreground:             monokai_foreground
+*fadeColor:              monokai_fadeColor
+*cursorColor:            monokai_cursorColor
+*pointerColorBackground: monokai_pointerColorBackground
+*pointerColorForeground: monokai_pointerColorForeground
+
+!! black dark/light
+*color0:                 monokai_color0
+*color8:                 monokai_color8
+
+!! red dark/light
+*color1:                 monokai_color1
+*color9:                 monokai_color9
+
+!! green dark/light
+*color2:                 monokai_color2
+*color10:                monokai_color10
+
+!! yellow dark/light
+*color3:                 monokai_color3
+*color11:                monokai_color11
+
+!! blue dark/light
+*color4:                 monokai_color4
+*color12:                monokai_color12
+
+!! magenta dark/light
+*color5:                 monokai_color5
+*color13:                monokai_color13
+
+!! cyan dark/light
+*color6:                 monokai_color6
+*color14:                monokai_color14
+
+!! white dark/light
+*color7:                 monokai_color7
+*color15:                monokai_color15
