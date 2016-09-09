@@ -1,4 +1,7 @@
-*font: -*-terminesspowerline-medium-r-*-*-18-*-*-*-*-*-iso10646-*
+URxvt.font:             xft:Source Code Pro for Powerline-12:hinting=True;antialias:True,xft:WenQuanYi Bitmap Song-12:medium;antialias=False,xft:WenQuanYi Zen Hei-12:medium;antialias=True,xft:HanaMinA-12:medium;antialias:True,xft:HanaMinB-12:medium;antialias:True,xft:HanaMinPlus-12:medium;antialias:True
+URxvt.boldFont:             xft:Source Code Pro for Powerline-12:bold;hinting=True;antialias:True,xft:WenQuanYi Bitmap Song-12:bold;antialias=False,xft:WenQuanYi Zen Hei-12:bold;antialias=True,xft:HanaMinA-12:bold;antialias:True,xft:HanaMinB-12:bold;antialias:True,xft:HanaMinPlus-12:bold;antialias:True
+
+URxvt.letterSpace: -1
 
 URxvt*termName: rxvt-unicode
 
@@ -16,9 +19,10 @@ URxvt.keysym.C-Delete: perl:matcher:last
 URxvt.keysym.M-Delete: perl:matcher:list
 
 ! :Bind C-0, C-+ and C-= to activate small, medium, and big font size resp.     
-URxvt.keysym.C-0: command:\033]710;-*-terminesspowerline-medium-r-normal--18-*-*-*-*-*-*-*\007
-URxvt.keysym.C-minus: command:\033]710;-*-terminesspowerline-medium-r-*--16-*-*-*-*-*-*-*\007
-URxvt.keysym.C-equal: command:\033]710;-*-terminesspowerline-medium-r-*--24-*-*-*-*-*-*-*\007
+! TODO fix these for SCP
+! URxvt.keysym.C-0: command:\033]710;-*-terminesspowerline-medium-r-normal--18-*-*-*-*-*-*-*\007
+! URxvt.keysym.C-minus: command:\033]710;-*-terminesspowerline-medium-r-*--16-*-*-*-*-*-*-*\007
+! URxvt.keysym.C-equal: command:\033]710;-*-terminesspowerline-medium-r-*--24-*-*-*-*-*-*-*\007
 URxvt.keysym.C-s: \001sudo \n
 
 ! Start new terminal in same directory
