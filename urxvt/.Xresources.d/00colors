@@ -40,7 +40,7 @@
 #define monokai_fg_hc            #171A0B
 #define monokai_fg_lc            #141414
 
-#define monokai_background  [90]monokai_bg
+#define monokai_background  monokai_bg
 #define monokai_foreground  monokai_fg
 #define monokai_cursorColor monokai_orange
 
@@ -138,6 +138,7 @@
 
 ! Actual settings
 *background:             monokai_background
+URxvt*background:             [90]monokai_background
 *foreground:             monokai_foreground
 *fadeColor:              monokai_fadeColor
 *cursorColor:            monokai_cursorColor
