@@ -36,6 +36,7 @@ values."
      gtags
 
      go
+     cb-groovy
      haskell
      ;; slime
      (rust :variables
