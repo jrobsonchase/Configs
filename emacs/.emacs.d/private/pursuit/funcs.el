@@ -34,6 +34,7 @@
                 nxml-child-indent 4
                 rust-format-on-save t
                 diff-hl-side 'right
+                tab-width 2
                 ;; debug-on-quit t
                 )
   (evil-leader/set-key "at" 'launch-terminal)
