@@ -2,8 +2,8 @@
 Version=1.0
 Type=Application
 Name=IntelliJ IDEA
-Icon=/data/home/jchase/.local/idea-IC-145.2070.6/bin/idea.png
-Exec="/data/home/jchase/.local/idea-IC-145.2070.6/bin/idea.sh" %f
+Icon=/data/home/jchase/.local/idea-IC-162.2228.15/bin/idea.png
+Exec="/data/home/jchase/.local/idea-IC-162.2228.15/bin/idea.sh" %f
 Comment=Develop with pleasure!
 Categories=Development;IDE;
 Terminal=false
