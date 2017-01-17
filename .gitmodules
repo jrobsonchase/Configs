@@ -7,3 +7,6 @@
 [submodule "emacs/.emacs.d/private/cmake-ide"]
 	path = emacs/.emacs.d/private/cmake-ide
 	url = https://github.com/nagunn/spacemacs-cmake-ide.git
+[submodule "emacs/.emacs.d/private/spacemacs-cmake-ide"]
+	path = emacs/.emacs.d/private/spacemacs-cmake-ide
+	url = https://github.com/ausimian/spacemacs-cmake-ide

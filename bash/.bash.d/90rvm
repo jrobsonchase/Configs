@@ -1,6 +1,9 @@
 if [ ! -v USE_RVM ]
 then
 rvm() {
+	if [ ! -z "$@" ]; then
+		ARGS="-c $@"
+	fi
 	[ -z $@ ] && USE_RVM=1 /bin/bash || USE_RVM=1 /bin/bash -i -c "$@"
 }
 fi
