@@ -58,7 +58,7 @@
   (add-hook 'term-mode-hook #'force-yasnippet-off)
   (add-hook 'shell-mode-hook #'force-yasnippet-off)
   (add-hook 'go-mode-hook #'yas-minor-mode)
-  (spacemacs/toggle-transparent-frame)
+  ;; (spacemacs/toggle-transparent-frame)
   (add-hook 'yas-before-expand-snippet-hook (lambda () (smartparens-mode -1)))
   (add-hook 'yas-after-exit-snippet-hook (lambda () (smartparens-mode 1)))
   (setenv "RUST_BACKTRACE" "1")
