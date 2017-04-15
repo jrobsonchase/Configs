@@ -6,3 +6,7 @@ RUST_HOME="$(rustc --print sysroot)"
 export RUST_SRC_PATH="$RUST_HOME/lib/rustlib/src/rust/src"
 
 export RUST_BACKTRACE=1
+
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$RUST_HOME/lib"
+export RLS_ROOT=$HOME/.local/rls
+export CARGO_INCREMENTAL=1
