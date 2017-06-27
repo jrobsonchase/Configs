@@ -1,25 +1,20 @@
 // Place your settings in this file to overwrite the default settings
 {
     "editor.codeLens": true,
-    "vim.useSystemClipboard": true,
     "editor.formatOnSave": true,
     "editor.formatOnPaste": true,
     "rust.rls": {
-        "executable": "rustup",
-        "args": [
-            "run",
-            "nightly",
-            "rls"
-        ],
-        "env": {
-            // "RUST_LOG": "rls=debug"
-        }
+        "executable": "rls",
+        "env": {},
+        "useRustfmt": true
     },
     // "rust.actionOnSave": "check",
     "rust.cargoEnv": {
         "CARGO_INCREMENTAL": 1
     },
+    "vim.useSystemClipboard": true,
     "vim.useCtrlKeys": true,
+    "vim.enableNeovim": false,
     "vim.otherModesKeyBindingsNonRecursive": [
         {
             "before": [
@@ -76,18 +71,17 @@
         "<C-k>": false
     },
     "workbench.iconTheme": "vs-minimal",
-    "[cpp]": {
-        "editor.quickSuggestions": false
-    },
-    "[c]": {
-        "editor.quickSuggestions": false
-    },
-    "java.errors.incompleteClasspath.severity": "ignore",
-    "workbench.colorTheme": "Complete Dark",
     "workbench.sideBar.location": "left",
     "zenMode.fullScreen": false,
     "zenMode.hideStatusBar": false,
     "zenMode.hideTabs": true,
     "zenMode.restore": true,
-    "window.menuBarVisibility": "toggle"
+    "window.menuBarVisibility": "toggle",
+    "vim.disableAnnoyingNeovimMessage": true,
+    "workbench.colorTheme": "Monokai",
+    "rust.rustup": {
+        "toolchain": "nightly-x86_64-unknown-linux-gnu"
+    },
+    "rust.mode": "rls",
+    "window.zoomLevel": 0
 }

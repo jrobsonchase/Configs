@@ -19,5 +19,6 @@ ${if_match "$gw_iface"=="eth0"}  {"full_text" : " \uf0ec eth0 on ${addr eth0} " 
   {"full_text": " \uf011  BAT0 [${battery_bar BAT0}] ${battery_time BAT0} "},
   {"full_text": " \uf011  BAT1 [${battery_bar BAT1}] ${battery_time BAT1} "},
   {"full_text": " \uf001  [${exec amixer get Master -M | grep -oE "[[:digit:]]*%" | head -n 1}] ", "color":"\#00ddff"},
-  {"full_text": " [${time %a %d %b} ${time %H:%M}] ","color": "\#2fdc57"}
+  {"full_text": " Home [${tztime America/New_York %a %d %b} ${tztime America/New_York %H:%M}] ","color": "\#2fdc57"},
+  {"full_text": " LA [${tztime America/Los_Angeles %a %d %b} ${tztime America/Los_Angeles %H:%M}] ","color": "\#2fdc57"}
 ]
