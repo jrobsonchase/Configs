@@ -14,7 +14,7 @@
     },
     "vim.useSystemClipboard": true,
     "vim.useCtrlKeys": true,
-    "vim.enableNeovim": false,
+    "vim.enableNeovim": true,
     "vim.otherModesKeyBindingsNonRecursive": [
         {
             "before": [

@@ -1,6 +1,11 @@
 // Place your key bindings in this file to overwrite the defaults
 [
     {
+        "key": "ctrl+n",
+        "command": "list.focusDown",
+        "when": "listFocus"
+    },
+    {
         "key": "ctrl+shift+t",
         "command": "workbench.action.tasks.test"
     },
@@ -63,5 +68,25 @@
     {
         "key": "ctrl+k v",
         "command": "workbench.action.closePanel"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "workbench.action.quickOpenNavigateNext",
+        "when": "inQuickOpen"
+    },
+    {
+        "key": "ctrl+p",
+        "command": "-workbench.action.quickOpenNavigateNext",
+        "when": "inQuickOpen"
+    },
+    {
+        "key": "ctrl+p",
+        "command": "workbench.action.quickOpenNavigatePrevious",
+        "when": "inQuickOpen"
+    },
+    {
+        "key": "ctrl+shift+p",
+        "command": "-workbench.action.quickOpenNavigatePrevious",
+        "when": "inQuickOpen"
     }
 ]
