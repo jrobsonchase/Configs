@@ -14,7 +14,7 @@ TEXT
 ,[{"full_text": " \uf004  $acpitemp°C [${cpu}%] ","color": "\#DC322F"},
   {"full_text": " \uf109 [$membar] ", "color":"\#B58900"},
 ${if_match "$gw_iface"=="(null)"}  {"full_text" : " Network Unavailable " , "color" : "\#FF173E" }, ${endif}
-${if_match "$gw_iface"=="wlp3s0"}  {"full_text" : " \uf1eb ${wireless_essid wlp3s0} [${wireless_link_qual_perc wlp3s0}%] on ${addr wlp3s0} " , "color" : "\#33CC99" }, ${endif}
+${if_match "$gw_iface"=="wlp58s0"}  {"full_text" : " \uf1eb ${wireless_essid wlp58s0} [${wireless_link_qual_perc wlp58s0}%] on ${addr wlp58s0} " , "color" : "\#33CC99" }, ${endif}
 ${if_match "$gw_iface"=="eth0"}  {"full_text" : " \uf0ec eth0 on ${addr eth0} " , "color" : "\#4C7899" }, ${endif}
   {"full_text": " \uf011  BAT0 [${battery_bar BAT0}] ${battery_time BAT0} "},
   {"full_text": " \uf011  BAT1 [${battery_bar BAT1}] ${battery_time BAT1} "},
