@@ -1,21 +1,37 @@
 // Place your settings in this file to overwrite the default settings
 {
+    "git.ignoreLimitWarning": true,
+    "editor.minimap.enabled": false,
     "editor.codeLens": true,
-    "editor.formatOnSave": true,
+    "editor.formatOnSave": false,
     "editor.formatOnPaste": true,
-    "rust.rls": {
-        "executable": "rls",
-        "env": {},
-        "useRustfmt": true
-    },
-    // "rust.actionOnSave": "check",
-    "rust.cargoEnv": {
-        "CARGO_INCREMENTAL": 1
-    },
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "'Fira Code'",
     "vim.useSystemClipboard": true,
     "vim.useCtrlKeys": true,
-    "vim.enableNeovim": true,
-    "vim.otherModesKeyBindingsNonRecursive": [
+    "vim.enableNeovim": false,
+    "vim.iskeyword": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-_",
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<C-u>"
+            ],
+            "after": [
+                "2",
+                "5",
+                "k"
+            ]
+        },
+        {
+            "before": [
+                "<C-d>"
+            ],
+            "after": [
+                "2",
+                "5",
+                "j"
+            ]
+        },
         {
             "before": [
                 "'",
@@ -68,20 +84,23 @@
         }
     ],
     "vim.handleKeys": {
-        "<C-k>": false
+        "<C-k>": false,
+        "<C-d>": true
     },
-    "workbench.iconTheme": "vs-minimal",
     "workbench.sideBar.location": "left",
     "zenMode.fullScreen": false,
     "zenMode.hideStatusBar": false,
     "zenMode.hideTabs": true,
     "zenMode.restore": true,
+    "zenMode.centerLayout": false,
     "window.menuBarVisibility": "toggle",
-    "vim.disableAnnoyingNeovimMessage": true,
     "workbench.colorTheme": "Monokai",
-    "rust.rustup": {
-        "toolchain": "nightly-x86_64-unknown-linux-gnu"
-    },
-    "rust.mode": "rls",
-    "window.zoomLevel": 0
+    "window.zoomLevel": 1,
+    "rust-client.channel": "nightly",
+    "rust.cfg_test": true,
+    "git.autofetch": true,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "rust.clippy_preference": "opt-in"
+    // "rust-client.rlsPath": "/home/jchase/.local/bin/rls"
 }
