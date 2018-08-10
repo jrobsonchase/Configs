@@ -1,7 +1,7 @@
 pathmunge $HOME/.local/eclipse
 pathmunge $HOME/.local/intellij/bin
 
-export ANTLR_JAR=$HOME/.local/antlr4/antlr-4.7-complete.jar
+export ANTLR_JAR=$HOME/.local/antlr4/antlr-4.7.1-complete.jar
 
 if [[ -n $CLASSPATH ]]; then
 	export CLASSPATH=$CLASSPATH:$ANTLR_JAR:.
