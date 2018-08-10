@@ -1,12 +1,6 @@
 [submodule "vim/.vim/bundle/vundle"]
 	path = vim/.vim/bundle/vundle
 	url = https://github.com/gmarik/vundle.vim
-[submodule "emacs/.emacs.d/private/cb-layers"]
-	path = emacs/.emacs.d/private/cb-layers
-	url = https://github.com/chrisbarrett/spacemacs-layers
 [submodule "emacs/.emacs.d/private/cmake-ide"]
 	path = emacs/.emacs.d/private/cmake-ide
 	url = https://github.com/nagunn/spacemacs-cmake-ide.git
-[submodule "emacs/.emacs.d/private/spacemacs-cmake-ide"]
-	path = emacs/.emacs.d/private/spacemacs-cmake-ide
-	url = https://github.com/ausimian/spacemacs-cmake-ide
