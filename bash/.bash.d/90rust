@@ -1,0 +1,1 @@
+alias code='env -u RUSTC_WRAPPER code'
