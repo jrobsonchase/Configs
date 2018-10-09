@@ -1,9 +1,8 @@
 // Place your settings in this file to overwrite the default settings
 {
     "git.ignoreLimitWarning": true,
-    "editor.minimap.enabled": false,
+    "editor.minimap.enabled": true,
     "editor.codeLens": true,
-    "editor.formatOnSave": false,
     "editor.formatOnPaste": true,
     "editor.fontLigatures": true,
     "editor.fontFamily": "'Fira Code'",
@@ -98,9 +97,12 @@
     "window.zoomLevel": 1,
     "rust-client.channel": "nightly",
     "rust.cfg_test": true,
+    "rust.all_targets": true,
     "git.autofetch": true,
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmDelete": false,
-    "rust.clippy_preference": "opt-in"
+    "rust.clippy_preference": "on",
+    "editor.formatOnSave": true,
+    "breadcrumbs.enabled": true
     // "rust-client.rlsPath": "/home/jchase/.local/bin/rls"
 }
