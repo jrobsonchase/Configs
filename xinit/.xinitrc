@@ -1,8 +1,4 @@
-source $HOME/.profile
-
-for i in $HOME/.xinit.d/*; do
-	source "$i"
-done
+source $HOME/.xprofile
 
 DEFAULT='dbus-launch --exit-with-session i3'
 

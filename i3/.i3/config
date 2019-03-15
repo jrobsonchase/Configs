@@ -22,7 +22,7 @@ bindsym $mod+Shift+s exec systemctl suspend
 # clear in small sizes. However, if you need a lot of unicode glyphs or
 # right-to-left text rendering, you should instead use pango for rendering and
 # chose a FreeType font, such as:
-font pango:DejaVu Sans Mono 10
+font pango:Fira Code 10
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -34,11 +34,11 @@ bindsym $mod+Return exec "kitty"
 bindsym $mod+Shift+Return exec "gksudo kitty"
 
 # open alsamixer and put it in a sane location
-bindsym $mod+Shift+a exec ~/.local/bin/urxvt_launch.sh -e alsamixer
+bindsym $mod+Shift+a exec kitty alsamixer
 for_window [title="alsamixer"] floating enable
 
 # Open htop
-bindsym $mod+t exec ~/.local/bin/urxvt_launch.sh -e htop
+bindsym $mod+t exec kitty htop
 for_window [title="htop"] floating enable
 
 # Cluster-ssh
@@ -187,7 +187,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         #tray_output primary
-		font pango:DejaVu Sans Mono 10
+		font pango:Fira Code 10
         status_command "/bin/bash ~/.i3/conky"
 		#status_command "i3status ~/.i3/i3status.conf"
         position top

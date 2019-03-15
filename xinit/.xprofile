@@ -1,0 +1,5 @@
+source $HOME/.profile
+
+for i in $HOME/.xprofile.d/*; do
+	source "$i"
+done
