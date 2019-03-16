@@ -28,17 +28,17 @@ font pango:Fira Code 10
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec "kitty"
+bindsym $mod+Return exec "kitty -1"
 
 # start a root terminal
-bindsym $mod+Shift+Return exec "gksudo kitty"
+bindsym $mod+Shift+Return exec "gksudo kitty -1"
 
 # open alsamixer and put it in a sane location
-bindsym $mod+Shift+a exec kitty alsamixer
+bindsym $mod+Shift+a exec kitty -1 -T alsamixer alsamixer
 for_window [title="alsamixer"] floating enable
 
 # Open htop
-bindsym $mod+t exec kitty htop
+bindsym $mod+t exec kitty -1 -T htop htop
 for_window [title="htop"] floating enable
 
 # Cluster-ssh
@@ -129,7 +129,7 @@ bindsym $mod+7 workspace 7
 bindsym $mod+8 workspace 8
 bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
-bindsym $mod+Tab workspace Term
+bindsym $mod+Tab workspace Tab
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace 1
@@ -142,7 +142,7 @@ bindsym $mod+Shift+7 move container to workspace 7
 bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
-bindsym $mod+Shift+Tab move container to workspace "Term"
+bindsym $mod+Shift+Tab move container to workspace "Tab"
 
 # reload the configuration file
 bindsym $mod+q reload
