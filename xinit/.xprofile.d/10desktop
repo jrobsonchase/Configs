@@ -1,9 +1,7 @@
 xcompmgr &
 xsetroot -cursor_name left_ptr &
 parcellite &
-xautolock -locker "loginctl lock-session" -time 5 &
-xss-lock -- i3lock -n -c 000000 &
-pulseaudio --start
+light-locker &
 wicd-gtk -t &
 redshift-gtk -l 38.0293:-78.4767 &
 layout default

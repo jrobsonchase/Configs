@@ -53,7 +53,7 @@ for_window [class="SshAskpass"] border pixel 3
 for_window [title="floating"] floating enable
 
 # lock screen
-bindsym $mod+Escape exec xautolock -locknow
+bindsym $mod+Escape exec loginctl lock-session
 
 # kill focused window
 bindsym $mod+Shift+c kill
