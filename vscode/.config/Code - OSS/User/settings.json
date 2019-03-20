@@ -92,7 +92,7 @@
     "zenMode.restore": true,
     "zenMode.centerLayout": false,
     "window.menuBarVisibility": "toggle",
-    "workbench.colorTheme": "Zenburn",
+    "workbench.colorTheme": "Monokai",
     "window.zoomLevel": 1,
     "git.autofetch": true,
     "explorer.confirmDragAndDrop": false,
