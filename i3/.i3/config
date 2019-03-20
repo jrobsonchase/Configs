@@ -213,3 +213,6 @@ new_window pixel 3
 
 # quick switch to previous ws
 workspace_auto_back_and_forth yes
+
+exec "~/.i3/workspaces.sh"
+exec /usr/bin/dex -ae i3

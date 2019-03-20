@@ -1,7 +1,5 @@
+#!/bin/sh
 xcompmgr &
 xsetroot -cursor_name left_ptr &
-parcellite &
-light-locker &
-wicd-gtk -t &
 redshift-gtk -l 38.0293:-78.4767 &
-layout default
+autorandr -c --default default
