@@ -1,0 +1,9 @@
+# vim: set ft=.gitconfig:
+[commit]
+	gpgSign = true
+[tag]
+	forceSignAnnotated = true
+[alias]
+	lg = log --graph --pretty=format:'%Cred%h%Creset %C(green)%G?%Creset%C(yellow)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset' --abbrev-commit
+[rerere]
+	enabled = true
