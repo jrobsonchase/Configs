@@ -1,4 +1,0 @@
-#!/bin/sh
-xcompmgr &
-xsetroot -cursor_name left_ptr &
-autorandr -c --default default

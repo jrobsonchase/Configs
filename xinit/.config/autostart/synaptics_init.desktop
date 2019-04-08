@@ -1,0 +1,5 @@
+[Desktop Entry]
+Exec=/home/josh/.local/lib/xinit/synaptics_init
+Name=synaptics_init
+Type=Application
+NotShowIn=sway

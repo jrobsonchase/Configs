@@ -1,5 +1,5 @@
 source $HOME/.profile
 
-for i in $HOME/.xprofile.d/*; do
-	source "$i"
+for i in $(ls $HOME/.xprofile.d); do
+	source "$HOME/.xprofile.d/$i"
 done

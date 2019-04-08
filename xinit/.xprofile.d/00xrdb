@@ -1,4 +1,0 @@
-xrdb ~/.Xresources
-for i in ~/.Xresources.d/*; do
-	xrdb -merge "$i"
-done

@@ -187,9 +187,9 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         #tray_output primary
-		font pango:Fira Code Medium 10
+        font pango:Fira Code Medium 10
         status_command "/bin/bash ~/.i3/conky"
-		#status_command "i3status ~/.i3/i3status.conf"
+        #status_command "i3status ~/.i3/i3status.conf"
         position top
 }
 

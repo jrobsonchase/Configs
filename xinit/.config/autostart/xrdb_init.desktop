@@ -1,0 +1,4 @@
+[Desktop Entry]
+Exec=/home/josh/.local/lib/xinit/xrdb_init
+Name=xrdb_init
+Type=Application
