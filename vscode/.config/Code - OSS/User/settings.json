@@ -1,5 +1,8 @@
 // Place your settings in this file to overwrite the default settings
 {
+    "files.associations": {
+        "*.inc": "php"
+    },
     "git.ignoreLimitWarning": true,
     "editor.minimap.enabled": false,
     "editor.codeLens": true,
@@ -90,7 +93,6 @@
     "zenMode.hideStatusBar": false,
     "zenMode.hideTabs": true,
     "zenMode.restore": true,
-    "zenMode.centerLayout": false,
     "window.menuBarVisibility": "toggle",
     "workbench.colorTheme": "Monokai",
     "window.zoomLevel": 1,
@@ -102,5 +104,7 @@
     // "rust-client.logToFile": true,
     "editor.formatOnPaste": true,
     "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-_",
-    "window.titleBarStyle": "native"
+    "window.titleBarStyle": "native",
+    "zenMode.hideLineNumbers": false,
+    "editor.formatOnSave": true
 }
