@@ -1,3 +1,6 @@
 #!/bin/sh
 
-cat $HOME/.fehbg | bash
+for hook in $HOME/.config/autorandr/postswitch.d/*
+do
+	source $hook
+done

@@ -1,5 +1,5 @@
 [Desktop Entry]
-Exec=/usr/bin/polybar -r i3
+Exec=~/.config/polybar/launch_polybar.sh
 Name=polybar
 Type=Application
 OnlyShowIn=i3
