@@ -50,7 +50,10 @@ for_window [class="Armitage"] floating enable
 for_window [class="Gthumb"] floating enable
 for_window [class="SshAskpass"] border pixel 3
 
-for_window [title="floating"] floating enable
+for_window [title="Yubico Authenticator"] floating enable
+bindsym $mod+F2 exec "yubioath-desktop"
+for_window [title="KeePassXC"] move scratchpad
+bindsym $mod+F1 [title="KeePassXC"] scratchpad show
 
 # lock screen
 bindsym $mod+Escape exec loginctl lock-session
