@@ -106,5 +106,6 @@
     "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-_",
     "window.titleBarStyle": "native",
     "zenMode.hideLineNumbers": false,
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "rust.clippy_preference": "on"
 }
