@@ -1,0 +1,112 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "files.associations": {
+        "*.inc": "php"
+    },
+    "git.ignoreLimitWarning": true,
+    "editor.minimap.enabled": false,
+    "editor.codeLens": true,
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "'Fira Code'",
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.enableNeovim": false,
+    "vim.iskeyword": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-_",
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<C-u>"
+            ],
+            "after": [
+                "2",
+                "5",
+                "k"
+            ]
+        },
+        {
+            "before": [
+                "<C-d>"
+            ],
+            "after": [
+                "2",
+                "5",
+                "j"
+            ]
+        },
+        {
+            "before": [
+                "'",
+                "'"
+            ],
+            "after": [
+                "<C-o>"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "f",
+                "S"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.files.saveAll",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "f",
+                "f"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.files.openFile",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "f",
+                "n"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.files.newUntitledFile"
+                }
+            ]
+        }
+    ],
+    "vim.handleKeys": {
+        "<C-k>": false,
+        "<C-d>": true
+    },
+    "workbench.sideBar.location": "left",
+    "zenMode.fullScreen": false,
+    "zenMode.hideStatusBar": false,
+    "zenMode.hideTabs": true,
+    "zenMode.restore": true,
+    "window.menuBarVisibility": "toggle",
+    "workbench.colorTheme": "Monokai",
+    "window.zoomLevel": 1,
+    "git.autofetch": true,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "breadcrumbs.enabled": true,
+    // "rust-client.revealOutputChannelOn": "info",
+    // "rust-client.logToFile": true,
+    "editor.formatOnPaste": true,
+    "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-_",
+    "window.titleBarStyle": "native",
+    "zenMode.hideLineNumbers": false,
+    "editor.formatOnSave": true,
+    "rust.clippy_preference": "on",
+    "crates.listPreReleases": true
+}
