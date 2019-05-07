@@ -201,7 +201,7 @@ label = %percentage_used%%
 
 [module/wlan]
 type = internal/network
-interface = ${env:POLYBAR_WLAN:wlp61s0}
+interface = ${env:POLYBAR_WLAN:disabled}
 interval = 3.0
 
 format-connected = <label-connected>
