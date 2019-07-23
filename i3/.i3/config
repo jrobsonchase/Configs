@@ -33,9 +33,8 @@ bindsym $mod+Return exec "kitty -1"
 # start a root terminal
 bindsym $mod+Shift+Return exec "gksudo kitty -1"
 
-# open alsamixer and put it in a sane location
-bindsym $mod+Shift+a exec kitty -1 -T alsamixer alsamixer
-for_window [title="alsamixer"] floating enable
+# Apply monitor configuration
+bindsym $mod+Shift+a exec autorandr -c
 
 # Open htop
 bindsym $mod+t exec kitty -1 -T htop htop
