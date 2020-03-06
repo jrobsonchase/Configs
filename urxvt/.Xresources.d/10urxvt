@@ -1,4 +1,6 @@
-*font: -*-terminesspowerline-medium-r-*-*-18-*-*-*-*-*-iso10646-*
+! *font: -*-terminesspowerline-medium-r-*-*-18-*-*-*-*-*-iso10646-*
+URxvt*font: xft:Fira Code:style=Retina:pixelsize=15:antialias=true:hinting=true
+URxvt.letterSpace: -1
 
 URxvt*termName: rxvt-unicode
 

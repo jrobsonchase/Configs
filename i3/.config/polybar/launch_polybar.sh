@@ -6,7 +6,7 @@ killall -q polybar
 # Wait until the processes have been shut down
 while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
-MONITORS=$(polybar -m | grep -v XRandR | cut -d : -f 1 | tac)
+MONITORS=$(xrandr --listactivemonitors | grep -E '^ [0-9]:' | sed 's/^ [0-9]: +\?\*\?\([^ ]\+\) .*/\1/')
 
 INTERFACES=$(ip link | grep -P '\d: en' | cut -d : -f 2 | tr -d ' ')
 ETH_CTR=1

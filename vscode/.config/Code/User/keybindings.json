@@ -88,5 +88,244 @@
         "key": "ctrl+shift+p",
         "command": "-workbench.action.quickOpenNavigatePrevious",
         "when": "inQuickOpen"
+    },
+    {
+        "key": "ctrl+k j",
+        "command": "workbench.action.togglePanel",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.togglePanel",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "-workbench.action.togglePanel"
+    },
+    {
+        "key": "enter",
+        "command": "-rust-analyzer.onEnter",
+        "when": "editorTextFocus && !suggestWidgetVisible && editorLangId == 'rust'"
+    },
+    {
+        "key": "enter",
+        "command": "-rust-analyzer.onEnter",
+        "when": "editorTextFocus && !suggestWidgetVisible && editorLangId == 'rust'"
+    },
+    {
+        "key": "enter",
+        "command": "-rust-analyzer.onEnter",
+        "when": "editorTextFocus && !suggestWidgetVisible && editorLangId == 'rust'"
+    },
+    {
+        "key": "enter",
+        "command": "-rust-analyzer.onEnter",
+        "when": "editorTextFocus && !suggestWidgetVisible && editorLangId == 'rust'"
+    },
+    {
+        "key": "enter",
+        "command": "-rust-analyzer.onEnter",
+        "when": "editorTextFocus && !suggestWidgetVisible && editorLangId == 'rust'"
+    },
+    {
+        "key": "enter",
+        "command": "-rust-analyzer.onEnter",
+        "when": "editorTextFocus && !suggestWidgetVisible && editorLangId == 'rust'"
+    },
+    {
+        "key": "enter",
+        "command": "-rust-analyzer.onEnter",
+        "when": "editorTextFocus && !suggestWidgetVisible && editorLangId == 'rust'"
+    },
+    {
+        "key": "enter",
+        "command": "-rust-analyzer.onEnter",
+        "when": "editorTextFocus && !suggestWidgetVisible && editorLangId == 'rust'"
+    },
+    {
+        "key": "enter",
+        "command": "-rust-analyzer.onEnter",
+        "when": "editorTextFocus && !suggestWidgetVisible && editorLangId == 'rust'"
+    },
+    {
+        "key": "enter",
+        "command": "-rust-analyzer.onEnter",
+        "when": "editorTextFocus && !suggestWidgetVisible && editorLangId == 'rust'"
+    },
+    {
+        "key": "ctrl+shift+m",
+        "command": "-rust-analyzer.matchingBrace",
+        "when": "editorTextFocus && editorLangId == 'rust'"
+    },
+    {
+        "key": "ctrl+shift+m",
+        "command": "-rust-analyzer.matchingBrace",
+        "when": "editorTextFocus && editorLangId == 'rust'"
+    },
+    {
+        "key": "ctrl+shift+m",
+        "command": "-rust-analyzer.matchingBrace",
+        "when": "editorTextFocus && editorLangId == 'rust'"
+    },
+    {
+        "key": "ctrl+shift+m",
+        "command": "-rust-analyzer.matchingBrace",
+        "when": "editorTextFocus && editorLangId == 'rust'"
+    },
+    {
+        "key": "enter",
+        "command": "-rust-analyzer.onEnter",
+        "when": "editorTextFocus && !suggestWidgetVisible && editorLangId == 'rust'"
+    },
+    {
+        "key": "enter",
+        "command": "-rust-analyzer.onEnter",
+        "when": "editorTextFocus && !suggestWidgetVisible && editorLangId == 'rust'"
+    },
+    {
+        "key": "enter",
+        "command": "-rust-analyzer.onEnter",
+        "when": "editorTextFocus && !suggestWidgetVisible && editorLangId == 'rust'"
+    },
+    {
+        "key": "enter",
+        "command": "-rust-analyzer.onEnter",
+        "when": "editorTextFocus && !suggestWidgetVisible && editorLangId == 'rust'"
+    },
+    {
+        "key": "enter",
+        "command": "-rust-analyzer.onEnter",
+        "when": "editorTextFocus && !suggestWidgetVisible && editorLangId == 'rust'"
+    },
+    {
+        "key": "enter",
+        "command": "-rust-analyzer.onEnter",
+        "when": "editorTextFocus && !suggestWidgetVisible && editorLangId == 'rust'"
+    },
+    {
+        "key": "enter",
+        "command": "-rust-analyzer.onEnter",
+        "when": "editorTextFocus && !suggestWidgetVisible && editorLangId == 'rust'"
+    },
+    {
+        "key": "enter",
+        "command": "-rust-analyzer.onEnter",
+        "when": "editorTextFocus && !suggestWidgetVisible && editorLangId == 'rust'"
+    },
+    {
+        "key": "enter",
+        "command": "-rust-analyzer.onEnter",
+        "when": "editorTextFocus && !suggestWidgetVisible && editorLangId == 'rust'"
+    },
+    {
+        "key": "enter",
+        "command": "-rust-analyzer.onEnter",
+        "when": "editorTextFocus && !suggestWidgetVisible && editorLangId == 'rust'"
+    },
+    {
+        "key": "enter",
+        "command": "-rust-analyzer.onEnter",
+        "when": "editorTextFocus && !suggestWidgetVisible && editorLangId == 'rust'"
+    },
+    {
+        "key": "enter",
+        "command": "-rust-analyzer.onEnter",
+        "when": "editorTextFocus && !suggestWidgetVisible && editorLangId == 'rust'"
+    },
+    {
+        "key": "enter",
+        "command": "-rust-analyzer.onEnter",
+        "when": "editorTextFocus && !suggestWidgetVisible && editorLangId == 'rust'"
+    },
+    {
+        "key": "enter",
+        "command": "-rust-analyzer.onEnter",
+        "when": "editorTextFocus && !suggestWidgetVisible && editorLangId == 'rust'"
+    },
+    {
+        "key": "enter",
+        "command": "-rust-analyzer.onEnter",
+        "when": "editorTextFocus && !suggestWidgetVisible && editorLangId == 'rust'"
+    },
+    {
+        "key": "enter",
+        "command": "-rust-analyzer.onEnter",
+        "when": "editorTextFocus && !suggestWidgetVisible && editorLangId == 'rust'"
+    },
+    {
+        "key": "enter",
+        "command": "-rust-analyzer.onEnter",
+        "when": "editorTextFocus && !suggestWidgetVisible && editorLangId == 'rust'"
+    },
+    {
+        "key": "enter",
+        "command": "-rust-analyzer.onEnter",
+        "when": "editorTextFocus && !suggestWidgetVisible && editorLangId == 'rust'"
+    },
+    {
+        "key": "enter",
+        "command": "-rust-analyzer.onEnter",
+        "when": "editorTextFocus && !suggestWidgetVisible && editorLangId == 'rust'"
+    },
+    {
+        "key": "enter",
+        "command": "-rust-analyzer.onEnter",
+        "when": "editorTextFocus && !suggestWidgetVisible && editorLangId == 'rust'"
+    },
+    {
+        "key": "enter",
+        "command": "-rust-analyzer.onEnter",
+        "when": "editorTextFocus && !suggestWidgetVisible && editorLangId == 'rust'"
+    },
+    {
+        "key": "enter",
+        "command": "-rust-analyzer.onEnter",
+        "when": "editorTextFocus && !suggestWidgetVisible && editorLangId == 'rust'"
+    },
+    {
+        "key": "enter",
+        "command": "-rust-analyzer.onEnter",
+        "when": "editorTextFocus && !suggestWidgetVisible && editorLangId == 'rust'"
+    },
+    {
+        "key": "enter",
+        "command": "-rust-analyzer.onEnter",
+        "when": "editorTextFocus && !suggestWidgetVisible && editorLangId == 'rust'"
+    },
+    {
+        "key": "enter",
+        "command": "-rust-analyzer.onEnter",
+        "when": "editorTextFocus && !suggestWidgetVisible && editorLangId == 'rust'"
+    },
+    {
+        "key": "enter",
+        "command": "-rust-analyzer.onEnter",
+        "when": "editorTextFocus && !suggestWidgetVisible && editorLangId == 'rust'"
+    },
+    {
+        "key": "enter",
+        "command": "-rust-analyzer.onEnter",
+        "when": "editorTextFocus && !suggestWidgetVisible && editorLangId == 'rust'"
+    },
+    {
+        "key": "enter",
+        "command": "-rust-analyzer.onEnter",
+        "when": "editorTextFocus && !suggestWidgetVisible && editorLangId == 'rust'"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "-rust-analyzer.run",
+        "when": "editorTextFocus && editorLangId == 'rust'"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "-rust-analyzer.run",
+        "when": "editorTextFocus && editorLangId == 'rust'"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "-rust-analyzer.run",
+        "when": "editorTextFocus && editorLangId == 'rust'"
     }
 ]

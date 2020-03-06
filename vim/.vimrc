@@ -1,6 +1,6 @@
 set ttymouse=xterm2
 set mouse=a
-set viminfo='1000,<1000,s100,h
+set viminfo='1000,<1000,s1000,h
 set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/vundle/

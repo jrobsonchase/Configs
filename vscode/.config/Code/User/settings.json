@@ -106,7 +106,12 @@
     "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-_",
     "window.titleBarStyle": "native",
     "zenMode.hideLineNumbers": false,
-    "editor.formatOnSave": true,
+    "crates.listPreReleases": true,
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
     "rust.clippy_preference": "on",
-    "crates.listPreReleases": true
+    "rust.cfg_test": true,
+    "rust.build_on_save": true,
+    "extensions.ignoreRecommendations": true,
+    "editor.formatOnSave": true
 }

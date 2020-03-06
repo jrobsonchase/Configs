@@ -5,4 +5,4 @@ pathmunge $CARGO_HOME/bin
 export RUST_BACKTRACE=1
 export CARGO_INCREMENTAL=1
 
-[ type sccache >/dev/null 2>&1 ] && export RUSTC_WRAPPER=sccache
+# type sccache >/dev/null 2>&1 && export RUSTC_WRAPPER=sccache
