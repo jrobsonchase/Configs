@@ -113,5 +113,9 @@
     "rust.cfg_test": true,
     "rust.build_on_save": true,
     "extensions.ignoreRecommendations": true,
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "rust-analyzer.rustfmtArgs": [
+        "+nightly"
+    ],
+    "rust-analyzer.cargo-watch.command": "clippy"
 }

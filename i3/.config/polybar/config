@@ -60,7 +60,7 @@ font-2 = "Fira Code Medium:size=11"
 
 modules-left = i3
 modules-center =
-modules-right = xbacklight pulseaudio  memory cpu temperature battery wlan eth eth2 date powermenu
+modules-right = xbacklight pulseaudio memory cpu temperature battery wlan eth eth2 date powermenu
 
 tray-position = right
 tray-padding = 2
@@ -253,17 +253,17 @@ format-disconnected =
 type = internal/date
 interval = 5
 
-date =
+date = "%Y-%m-%d"
 date-alt = "%Y-%m-%d"
 
 time = %H:%M
-time-alt =
+time-alt = %H:%M
 
 format-prefix = 
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #0a6cf5
 
-label = %date%%time%
+label = %time% %date%
 
 [module/pulseaudio]
 type = internal/pulseaudio
