@@ -1,6 +1,3 @@
-GOPATH=$HOME:$HOME/gozer/go; export GOPATH
-GOROOT=$HOME/.local/lib/go; export GOROOT
+GOPATH=$HOME; export GOPATH
 
 pathmunge $HOME/bin
-pathmunge $GOROOT/bin
-
