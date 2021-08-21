@@ -49,6 +49,8 @@ bindsym $mod+F2 exec "yubioath-desktop"
 for_window [title="KeePassXC"] move scratchpad
 bindsym $mod+F1 [title="KeePassXC"] scratchpad show
 
+bindsym $mod+m [title="TinTin++"] scratchpad show
+
 # lock screen
 bindsym $mod+Escape exec loginctl lock-session
 
@@ -202,6 +204,16 @@ bindsym $mod+i exec "~/.local/bin/weechat_launch.sh"
 bindsym 0x1008ff02 exec "~/.local/bin/backlight_up.sh"
 bindsym 0x1008ff03 exec "~/.local/bin/backlight_down.sh"
 bindsym 0xff61 exec "~/.local/bin/imgur-screenshot.sh"
+
+bindsym XF86AudioRaiseVolume exec playerctl volume 
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
+bindsym XF86AudioPlay exec playerctl play-pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
+
+bindsym $mod+p sticky toggle
+
+bindsym $mod+x exec "~/.local/bin/screenshot.sh"
 
 #
 # Some of my additional settings

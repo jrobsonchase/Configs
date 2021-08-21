@@ -1,0 +1,5 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=ibus
+Exec=xss-lock -- i3lock -c 000000

@@ -60,7 +60,7 @@ font-2 = "Fira Code Medium:size=11"
 
 modules-left = i3
 modules-center =
-modules-right = xbacklight pulseaudio memory cpu temperature battery wlan eth eth2 date powermenu
+modules-right = backlight-acpi pulseaudio memory cpu temperature battery wlan eth eth2 date powermenu
 
 tray-position = right
 tray-padding = 2
@@ -102,7 +102,7 @@ label-indicator-underline = ${colors.secondary}
 
 [module/filesystem]
 type = internal/fs
-interval = 25
+interval = 5
 
 mount-0 = /
 
@@ -177,6 +177,8 @@ bar-fill-foreground = #9f78e1
 bar-empty = ─
 bar-empty-font = 2
 bar-empty-foreground = ${colors.foreground-alt}
+
+enable-scroll = true
 
 [module/backlight-acpi]
 inherit = module/xbacklight
@@ -375,6 +377,28 @@ ramp-0 = 
 ramp-1 = 
 ramp-2 = 
 ramp-foreground = ${colors.foreground-alt}
+
+[module/playerctl-meta]
+type = custom/script
+
+exec = ${HOME}/.config/polybar/playerctl_info.sh
+exec-if = which playerctl
+interval = 15
+
+[module/playerctl-playpause]
+type = custom/text
+content = "Play/Pause"
+click-left = playerctl play-pause
+
+[module/playerctl-prev]
+type = custom/text
+content = "Prev"
+click-left = playerctl previous
+
+[module/playerctl-next]
+type = custom/text
+content = "Next"
+click-left = playerctl next
 
 [module/powermenu]
 type = custom/menu
