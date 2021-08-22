@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 syndaemon -k -i 1 -d
 synclient EmulateMidButtonTime=0
 synclient EmulateTwoFingerMinZ=282

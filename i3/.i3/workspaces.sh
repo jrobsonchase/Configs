@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 for i in $HOME/.i3/workspaces.d/*.json; do
 	workspace_name=$(basename -s .json "$i")

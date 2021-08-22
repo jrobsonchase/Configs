@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 xrdb ~/.Xresources
 for i in $(ls $HOME/.Xresources.d/); do
 	xrdb -merge "$HOME/.Xresources.d/$i"

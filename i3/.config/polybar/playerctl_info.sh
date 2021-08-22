@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 playerctl metadata 2>/dev/null > /tmp/playerctl-meta
 

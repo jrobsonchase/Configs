@@ -1,5 +1,5 @@
 [Desktop Entry]
-Exec=/usr/bin/bash -c "$HOME/.config/polybar/launch_polybar.sh"
+Exec=/usr/bin/env bash -c "$HOME/.config/polybar/launch_polybar.sh"
 Name=polybar
 Type=Application
 OnlyShowIn=i3

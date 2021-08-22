@@ -4,7 +4,7 @@ rvm() {
 	if [ ! -z "$@" ]; then
 		ARGS="-c $@"
 	fi
-	[ -z $@ ] && USE_RVM=1 /bin/bash || USE_RVM=1 /bin/bash -i -c "$@"
+	[ -z $@ ] && USE_RVM=1 /usr/bin/env bash || USE_RVM=1 /usr/bin/env bash -i -c "$@"
 }
 fi
 
