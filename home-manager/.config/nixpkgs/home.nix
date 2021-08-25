@@ -1,6 +1,9 @@
-{ config, pkgs, ... }:
+{ config, lib, pkgs, ... }:
 
-{
+rec {
+  imports = [
+    ./desktop/default.nix
+  ];
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 
@@ -26,14 +29,6 @@
     enableScDaemon = true;
   };
 
-  gtk = {
-    enable = true;
-    theme = {
-      package = pkgs.numix-gtk-theme;
-      name = "Numix";
-    };
-  };
-
   programs.git = {
     enable = true;
     userName = "Josh Robson Chase";
@@ -52,19 +47,18 @@
   };
 
   home.packages = with pkgs; [
+    firefox
     vim_configurable
     font-awesome
     fira-code
-    polybarFull
-    rofi
     stow
     dunst
-    dex
     gnupg
     ripgrep
     picom
     ibus
-    parcellite
-    dconf
+    polybarFull
+    libnotify
+    tree
   ];
 }
