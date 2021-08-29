@@ -7,21 +7,6 @@ rec {
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 
-  # Home Manager needs a bit of information about you and the
-  # paths it should manage.
-  home.username = "josh";
-  home.homeDirectory = "/home/josh";
-
-  # This value determines the Home Manager release that your
-  # configuration is compatible with. This helps avoid breakage
-  # when a new Home Manager release introduces backwards
-  # incompatible changes.
-  #
-  # You can update Home Manager without changing this value. See
-  # the Home Manager release notes for a list of state version
-  # changes in each release.
-  home.stateVersion = "21.05";
-
   services.gpg-agent = {
     enable = true;
     enableSshSupport = true;
@@ -46,8 +31,14 @@ rec {
     };
   };
 
+  programs.firefox = {
+    enable = true;
+    profiles.default.settings = {
+      "browser.ctrlTab.sortByRecentlyUsed" = true;
+    };
+  };
+
   home.packages = with pkgs; [
-    firefox
     vim_configurable
     font-awesome
     fira-code
@@ -60,5 +51,6 @@ rec {
     polybarFull
     libnotify
     tree
+    file
   ];
 }
